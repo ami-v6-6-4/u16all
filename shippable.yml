@@ -18,7 +18,7 @@ services:
 build:
   pre_ci_boot:
     image_name: drydock/u16all
-    image_tag: master
+    image_tag: v6.6.4
     pull: true
     
   ci:
@@ -44,7 +44,7 @@ build:
     - which mysql
     - mysql -V #|| true
     - which sqlite3 #|| true
-    
+    - pip show pycrypto
     - docker pull shippabledocker/sample_node_pvt:ecr
     
 integrations:
