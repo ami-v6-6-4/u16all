@@ -36,7 +36,7 @@ build:
     - echo SHIPPABLE_SELENIUM_v=$SHIPPABLE_SELENIUM_BINARY    
     - echo SHIPPABLE_SQLITE_BINARY=$SHIPPABLE_SQLITE_BINARY
 
-    - cassandra -V #3.11.2
+    - cassandra -v #3.11.2
     - memcached -V #1.5.7
     #- neo4j --version #3.3.5
     - psql --version #10.4
